@@ -1,9 +1,6 @@
 /** @type {import('tailwindcss').Config} */
-export default {
-  content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
-  ],
+module.exports = {
+  content: ["./dist/**/*.{html,js}",'./dist/assets/icons/*.svg'],
   theme: {
     container: {
       center: true,
@@ -21,5 +18,5 @@ export default {
       },
     },
   },
-  plugins: [],
+  plugins: [require("@tailwindcss/typography")],
 };

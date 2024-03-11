@@ -32,16 +32,16 @@
     @apply w-full rounded-md border border-[#CCCCCC]/[14%] bg-lighterDark  p-1.5 focus:outline-none lg:p-3;
   }
 
-  .post-avater {
-    @apply max-w-10 max-h-10 rounded-full lg:max-h-[58px] lg:max-w-[58px];
+  .post-avater{
+    @apply max-w-10 max-h-10 rounded-full lg:max-h-[58px] lg:max-w-[58px]
   }
 
   /* Action Modal */
-  .action-modal-container {
-    @apply card absolute right-full top-6 min-w-[200px] divide-y divide-[#3F3F3F] py-2 [&>button]:py-2;
+  .action-modal-container{
+    @apply card absolute right-full top-6 min-w-[200px] divide-y divide-[#3F3F3F] py-2 [&>button]:py-2
   }
 
-  .action-menu-item {
-    @apply flex w-full items-center gap-2 text-gray-100 transition-all;
+  .action-menu-item{
+    @apply flex w-full items-center gap-2 text-gray-100 transition-all
   }
 }
