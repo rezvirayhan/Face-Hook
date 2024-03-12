@@ -5,14 +5,17 @@ import Login from './Pages/Login'
 import NotFound from './Pages/NotFound'
 import Profile from './Pages/Profile'
 import Register from './Pages/Register'
+import PrivateRoutes from './Routes/PrivateRoutes'
 function App() {
 
   return (
     <>
       <Routes>
-        <Route element={<Home />} path='/' exact />
+        <Route element={<PrivateRoutes />}>
+          <Route element={<Home />} path='/' exact />
+          <Route element={<Profile />} path='me' />
+        </Route>
         <Route element={<Login />} path='login' />
-        <Route element={<Profile />} path='me' />
         <Route element={<Register />} path='register' />
         <Route element={<NotFound />} path='*' />
       </Routes>
